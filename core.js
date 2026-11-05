@@ -4,13 +4,13 @@ const $=id=>document.getElementById(id);
 const Q=new URLSearchParams(location.search);
 const DEBUG=Q.get('debug')==='1';
 // ================= AD CONFIG (edit here before release) =================
-// Exactly 3 AdMob ad units. The values below are GOOGLE'S PUBLIC TEST IDs only.
-// >>> Replace with this app's own AdMob unit IDs in the Android project before publishing. <<<
+// Exactly 3 AdMob ad units (this app's REAL IDs, reference only).
+// Web/browser never loads AdMob (only ?test=1 mock); the Android app uses native IDs from admob.properties.
 // The Android side reads them via AndroidAds.configure(json) if it implements it.
 window.RSB_AD_UNITS=window.RSB_AD_UNITS||{
- banner:      'ca-app-pub-3940256099942544/6300978111', // rsb_banner_menu      (TEST ID)
- interstitial:'ca-app-pub-3940256099942544/1033173712', // rsb_inter_stage_end  (TEST ID)
- rewarded:    'ca-app-pub-3940256099942544/5224354917'  // rsb_reward_continue  (TEST ID)
+ banner:      'ca-app-pub-7699488633919663/2653909373', // rsb_banner_menu      (REAL)
+ interstitial:'ca-app-pub-7699488633919663/4203416882', // rsb_inter_stage_end  (REAL)
+ rewarded:    'ca-app-pub-7699488633919663/4011845197'  // rsb_reward_continue  (REAL)
 };
 // Ad preview mode: ?test=1 shows labelled mock ads at each placement (no real ads). Persists in localStorage
 // (survives reloads / home-screen launch); ?test=0 turns it off. &fill=fail|nofill simulates failures; &fast=0 = realistic interstitial cap.

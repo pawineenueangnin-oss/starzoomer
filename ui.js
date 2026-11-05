@@ -67,7 +67,7 @@ const UI={cur:null,
   <div class="set"><span>${T('quality')}</span><select id="sQ">${['auto','low','high'].map(q=>`<option value="${q}" ${SAVE.q===q?'selected':''}>${T('q_'+q)}</option>`).join('')}</select></div>
   <div class="set"><span>${T('language')}</span><select id="sL"><option value="auto">${T('auto')}</option>${langs}</select></div></div>
   <div class="howto">${T('howto')}</div>
-  <div class="studio big"><img src="studio-logo.png" alt=""><span>${T('madeBy')} <b>P-Prece Studio</b><br>พีพีช Studio</span></div><a class="priv" href="privacy.html" target="_blank">${T('privacy')}</a>`,'settings');
+  <div class="studio big"><img src="studio-logo.png" alt=""><span>${T('madeBy')} <b>P-Prece Studio</b><br>พีพีช Studio</span></div><a class="priv" href="privacy.html" target="_blank">${T('privacy')}</a>${(()=>{try{return window.AndroidAds&&AndroidAds.isPrivacyOptionsRequired&&AndroidAds.isPrivacyOptionsRequired();}catch(_){return false;}})()?`<div class="row"><button class="b sm" data-a="privopt">${LANG==='th'?'ตั้งค่าความเป็นส่วนตัว (โฆษณา)':'Privacy settings (ads)'}</button></div>`:''}`,'settings');
   $('sQ').onchange=e=>{SAVE.q=e.target.value;persist();setQuality();};
   $('sL').onchange=e=>{const v=e.target.value;try{if(v==='auto')localStorage.removeItem('rsb_lang');else localStorage.setItem('rsb_lang',v);}catch(_){}LANG=v==='auto'?detectLang():v;applyLang();this.settings(this.from);};},
  // v29: no banner on result screens (keeps ads far from Next/Retry; avoids accidental clicks)
@@ -114,7 +114,7 @@ const UI={cur:null,
  act(a,b){const i=+b.dataset.i;
   switch(a){
    case'play':if(SAVE.far>=0&&SAVE.cleared)this.beginSec(SAVE.far);else this.begin(Math.min(SAVE.reached,10));break;case'map':this.map();break;case'mpg':this.map(i);break;case'sec':this.beginSec(i);break;case'hangar':this.hangar();break;case'menu':this.menu();break;
-   case'settings':this.settings(this.cur);break;case'back':this.from==='map'?this.map():this.menu();break;
+   case'settings':this.settings(this.cur);break;case'privopt':try{AndroidAds.showPrivacyOptions();}catch(_){}break;case'back':this.from==='map'?this.map():this.menu();break;
    case'stage':this.begin(i);break;
    case'tog':{const k=b.dataset.k;SAVE[k]=SAVE[k]?0:1;persist();AU.setVol();if(k==='mus'&&SAVE.mus){AU.songId=-2;AU.play(50);}this.settings(this.from);break;}
    case'equip':SAVE.ship=i;persist();P.ship=i;this.hangar();break;
