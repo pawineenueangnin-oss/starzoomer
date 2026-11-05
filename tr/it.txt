@@ -1,0 +1,148 @@
+Abbatti gli invasori alieni e riporta la luce delle stelle!
+Gioca
+Livelli
+Hangar
+Navi
+Potenziamenti
+Impostazioni
+Suoni
+Musica
+Vibrazione
+Grafica
+Auto
+Bassa
+Alta
+Lingua
+Auto
+Difficoltà
+Facile
+Normale
+Difficile
+In pausa
+Riprendi
+Ricomincia
+Esci
+Game over
+Livello superato!
+Punti
+Record
+Crediti
+Avanti
+Riprova
+Mappa
+Continua (video)
+Crediti x2 (video)
+ALLARME
+Nave madre gigante in arrivo!
+Usa
+In uso
+MAX
+Cadenza
+Danno
+Scudo
+Calamita
+Livello
+Salta
+Trascina per volare · fuoco automatico · B = bomba
+Creato da
+Privacy
+Supera il livello {n}
+Nuovo record!
+Bomba
+Video non disponibile ora
+Crediti insufficienti
+Doppio cannone · equilibrata
+Colpo ampio · velocissima
+Cannone perforante · scudo extra
+Ventaglio
+Laser
+Missili
+Scudo +1
+Bomba +1
+Più velocità
+1UP!
+Velo Viola
+Cintura di Cenere
+Luna Gelata Rime
+Settore dei Soli Gemelli
+Deriva di Corallo
+Squarcio della Tempesta
+Campo di Comete di Vetro
+Forgia delle Braci
+Cavità dell'Alveare
+Cuore dello Sciame
+MAGNETE!
+PUNTI x2!
+POTENZIAMENTO!
+EVOLUZIONE!
+LIVELLO GIÙ
+Tremolio dello schermo
+Bonus abbattimenti
+Bonus senza danni
+Bonus combo
+Totale
+Tocca per saltare
+Durata potenziamenti
+Vita extra
+Missioni
+Premio del giorno
+Giorno {n}
+Riscuoti
+Riscosso
+Nuove missioni domani
+Sconfiggi {n} alieni
+Raccogli {n} monete
+Raccogli {n} potenziamenti
+Supera {n} livello/i
+Sconfiggi un boss
+Supera un livello senza perdere vite
+Vernice
+Fiamma del motore
+Classico
+Oceano
+Caramella
+Giungla
+Oro
+Ologramma
+Fuoco
+Ghiaccio
+Galassia
+Lime
+Arcobaleno
+{n} ★
+Nuove stelle!
+Pioggia di monete!
+Alieno d'oro! Colpiscilo!
+Rifornimenti!
+DRONI!
+Aiutante
++1 scudo e colpi nemici più lenti
+LIVELLO SU!
+Livello speciale
+Cometa del tesoro
+Bonus livello speciale
+Mega premio!
+Livelli 1–10 completati!
+Ora: il Livello Speciale Cometa del Tesoro, poi il livello 11 e oltre!
+Continua
+Menu principale
+Boss Rush
+Completa il livello 10 per sbloccare il Boss Rush
+Boss sconfitti: {n} / 10
+Record
+Potenziamento gratis
+Potenziamento + scudo!
+Come volare
+Trascina ovunque per muovere la nave
+Spara da sola. Raccogli i potenziamenti!
+Capito!
+Completa {n} livello/i con {s}
+Neon
+Cremisi
+Vuoto
+Furtivo
+Artico
+Solare
+Completa il livello 5
+Ottieni 3 stelle in un livello
+Supera il Boss Rush

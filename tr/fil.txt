@@ -1,0 +1,148 @@
+Barilin ang mga alien na mananakop at ibalik ang liwanag ng mga bituin!
+Laro
+Mga Stage
+Hangar
+Mga Barko
+Upgrade
+Settings
+Tunog
+Musika
+Vibration
+Graphics
+Auto
+Mababa
+Mataas
+Wika
+Auto
+Hirap
+Madali
+Normal
+Mahirap
+Naka-pause
+Ituloy
+Ulitin mula simula
+Umalis
+Game Over
+Tapos ang stage!
+Iskor
+Pinakamataas
+Credits
+Susunod
+Subukan muli
+Mapa
+Ituloy (video)
+Credits x2 (video)
+BABALA
+Paparating ang higanteng mothership!
+Gamitin
+Ginagamit
+MAX
+Bilis ng putok
+Lakas
+Kalasag
+Magnet
+Stage
+Laktawan
+I-drag para lumipad · auto-putok · B = bomba
+Gawa ng
+Patakaran sa privacy
+Tapusin ang stage {n}
+Bagong rekord!
+Bomba
+Walang video ngayon
+Kulang ang credits
+Dobleng blaster · balanse
+Malawak na putok · napakabilis
+Mabigat na kanyon · dagdag kalasag
+Kalat
+Laser
+Misil
+Kalasag +1
+Bomba +1
+Bilis +
+1UP!
+Lilang Belo
+Sinturon ng Abo
+Buwang Yelo Rime
+Sektor ng Kambal na Araw
+Agos ng Korales
+Lamat ng Bagyo
+Parang ng Salaming Kometa
+Pandayan ng Baga
+Butas ng Bahay-pukyutan
+Puso ng Kawan
+MAGNET!
+PUNTOS x2!
+DAGDAG LAKAS!
+EBOLUSYON!
+BUMABA ANG ANTAS
+Pagyanig ng screen
+Bonus sa pagwasak
+Bonus na walang tama
+Combo bonus
+Kabuuan
+I-tap para laktawan
+Tagal ng Power-up
+Dagdag na Buhay
+Mga Misyon
+Pang-araw-araw na Gantimpala
+Araw {n}
+Kunin
+Nakuha na
+Bagong misyon bukas
+Talunin ang {n} alien
+Mangolekta ng {n} barya
+Mangolekta ng {n} power-up
+Tapusin ang {n} stage
+Talunin ang isang boss
+Tapusin ang stage nang walang nawalang buhay
+Pintura
+Apoy ng makina
+Klasiko
+Karagatan
+Kendi
+Gubat
+Ginto
+Hologram
+Apoy
+Yelo
+Galaksiya
+Dayap
+Bahaghari
+{n} ★
+Bagong bituin!
+Ulan ng barya!
+Gintong alien! Barilin mo!
+May padalang tulong!
+MGA DRONE!
+Katulong
++1 panangga at mas mabagal na bala ng kaaway
+LEVEL UP!
+Espesyal na Yugto
+Kometa ng Kayamanan
+Bonus ng Espesyal na Yugto
+Mega Gantimpala!
+Tapos ang Stage 1–10!
+Susunod: Special Stage Treasure Comet, tapos Stage 11 at higit pa!
+Ituloy
+Pangunahing menu
+Boss Rush
+Tapusin ang stage 10 para mabuksan ang Boss Rush
+Natalong boss: {n} / 10
+Pinakamataas
+Libreng power-up
+Power-up + kalasag!
+Paano lumipad
+I-drag kahit saan para igalaw ang barko
+Kusa itong bumabaril. Kunin ang mga power-up!
+Sige!
+Tapusin ang {n} stage gamit ang {s}
+Neon
+Crimson
+Void
+Stealth
+Arctic
+Solar
+Tapusin ang stage 5
+Makakuha ng 3 bituin sa kahit anong stage
+Talunin ang Boss Rush

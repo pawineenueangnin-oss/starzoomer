@@ -1,0 +1,148 @@
+Uzaylı istilacıları vur ve yıldızların ışığını geri getir!
+Oyna
+Bölümler
+Hangar
+Gemiler
+Geliştirmeler
+Ayarlar
+Ses
+Müzik
+Titreşim
+Grafik
+Otomatik
+Düşük
+Yüksek
+Dil
+Otomatik
+Zorluk
+Kolay
+Normal
+Zor
+Duraklatıldı
+Devam
+Yeniden başla
+Çık
+Oyun bitti
+Bölüm geçildi!
+Puan
+Rekor
+Kredi
+Sonraki
+Tekrar dene
+Harita
+Devam et (video)
+Kredi x2 (video)
+UYARI
+Dev ana gemi yaklaşıyor!
+Kullan
+Kullanımda
+MAKS
+Atış hızı
+Hasar
+Kalkan
+Mıknatıs
+Bölüm
+Geç
+Uçmak için sürükle · otomatik ateş · B = bomba
+Yapımcı
+Gizlilik politikası
+{n}. bölümü geç
+Yeni rekor!
+Bomba
+Şu an video yok
+Yeterli kredi yok
+Çift blaster · dengeli
+Geniş saçılım · çok hızlı
+Ağır delici top · ekstra kalkan
+Saçma
+Lazer
+Füzeler
+Kalkan +1
+Bomba +1
+Hız artışı
+1UP!
+Mor Peçe
+Kül Kuşağı
+Buz Ayı Rime
+İkiz Güneşler Sektörü
+Mercan Akıntısı
+Fırtına Yarığı
+Cam Kuyrukluyıldız Alanı
+Kor Ocağı
+Kovan Oyuğu
+Sürünün Kalbi
+MIKNATIS!
+PUAN x2!
+GÜÇ ARTTI!
+EVRİM!
+SEVİYE DÜŞTÜ
+Ekran sarsıntısı
+İmha bonusu
+Hasarsız bonus
+Kombo bonusu
+Toplam
+Geçmek için dokun
+Güç Süresi
+Ekstra Can
+Görevler
+Günlük Ödül
+{n}. Gün
+Al
+Alındı
+Yarın yeni görevler
+{n} uzaylı yen
+{n} jeton topla
+{n} güçlendirme topla
+{n} bölüm geç
+Bir boss yen
+Can kaybetmeden bölüm geç
+Boya
+Motor alevi
+Klasik
+Okyanus
+Şeker
+Orman
+Altın
+Hologram
+Ateş
+Buz
+Galaksi
+Limon
+Gökkuşağı
+{n} ★
+Yeni yıldızlar!
+Altın yağmuru!
+Altın uzaylı! Vur onu!
+Malzeme yağmuru!
+DRONLAR!
+Yardımcı
++1 kalkan ve daha yavaş düşman atışları
+SEVİYE ATLADIN!
+Özel Bölüm
+Hazine Kuyruklu Yıldızı
+Özel Bölüm Bonusu
+Mega Ödül!
+Bölüm 1–10 tamamlandı!
+Sırada: Özel Bölüm Hazine Kuyrukluyıldızı, sonra bölüm 11 ve ötesi!
+Devam
+Ana menü
+Boss Akını
+Boss Akını için 10. bölümü geç
+Yenilen boss: {n} / 10
+En iyi
+Ücretsiz güçlendirme
+Güçlendirme + kalkan!
+Nasıl uçulur
+Gemiyi hareket ettirmek için herhangi bir yeri sürükle
+Otomatik ateş eder. Güçlendirmeleri topla!
+Anladım!
+{s} ile {n} bölüm geç
+Neon
+Kızıl
+Boşluk
+Gizli
+Kutup
+Güneş
+5. bölümü geç
+Herhangi bir bölümde 3 yıldız al
+Boss Akınını yen

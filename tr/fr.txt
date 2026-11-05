@@ -1,0 +1,148 @@
+Abats les envahisseurs extraterrestres et rends leur lumière aux étoiles !
+Jouer
+Niveaux
+Hangar
+Vaisseaux
+Améliorations
+Réglages
+Sons
+Musique
+Vibration
+Graphismes
+Auto
+Bas
+Élevé
+Langue
+Auto
+Difficulté
+Facile
+Normal
+Difficile
+Pause
+Reprendre
+Recommencer
+Quitter
+Partie terminée
+Niveau réussi !
+Score
+Record
+Crédits
+Suivant
+Réessayer
+Carte
+Continuer (vidéo)
+Crédits x2 (vidéo)
+ALERTE
+Vaisseau-mère géant en approche !
+Utiliser
+Utilisé
+MAX
+Cadence
+Dégâts
+Bouclier
+Aimant
+Niveau
+Passer
+Glisse pour voler · tir auto · B = bombe
+Créé par
+Politique de confidentialité
+Réussis le niveau {n}
+Nouveau record !
+Bombe
+Vidéo indisponible pour l'instant
+Pas assez de crédits
+Double canon · équilibré
+Tir large · très rapide
+Canon perçant · bouclier en plus
+Éventail
+Laser
+Missiles
+Bouclier +1
+Bombe +1
+Vitesse +
+1UP !
+Voile Violet
+Ceinture de Cendres
+Lune Glacée Rime
+Secteur des Soleils Jumeaux
+Dérive de Corail
+Faille Orageuse
+Champ de Comètes de Verre
+Forge des Braises
+Creux de la Ruche
+Cœur de l'Essaim
+AIMANT !
+SCORE x2 !
+PUISSANCE !
+ÉVOLUTION !
+NIVEAU PERDU
+Tremblement de l'écran
+Bonus destructions
+Bonus sans dégâts
+Bonus combo
+Total
+Touchez pour passer
+Durée des bonus
+Vie en plus
+Missions
+Cadeau du jour
+Jour {n}
+Récupérer
+Récupéré
+Nouvelles missions demain
+Bats {n} aliens
+Ramasse {n} pièces
+Ramasse {n} bonus
+Termine {n} niveau(x)
+Bats un boss
+Termine un niveau sans perdre de vie
+Peinture
+Flamme du moteur
+Classique
+Océan
+Bonbon
+Jungle
+Or
+Hologramme
+Feu
+Glace
+Galaxie
+Citron vert
+Arc-en-ciel
+{n} ★
+Nouvelles étoiles !
+Pluie de pièces !
+Alien doré ! Tire dessus !
+Ravitaillement !
+DRONES !
+Assistant
++1 bouclier et tirs ennemis plus lents
+NIVEAU SUPÉRIEUR !
+Niveau spécial
+Comète au trésor
+Bonus niveau spécial
+Méga récompense !
+Niveaux 1 à 10 terminés !
+Ensuite : le niveau spécial Comète au trésor, puis le niveau 11 et au-delà !
+Continuer
+Menu principal
+Boss Rush
+Terminez le niveau 10 pour débloquer le Boss Rush
+Boss vaincus : {n} / 10
+Record
+Bonus gratuit
+Bonus + bouclier !
+Comment voler
+Glissez n’importe où pour déplacer le vaisseau
+Il tire tout seul. Ramassez les bonus !
+Compris !
+Terminez {n} niveau(x) avec {s}
+Néon
+Pourpre
+Néant
+Furtif
+Arctique
+Solaire
+Terminez le niveau 5
+Obtenez 3 étoiles sur un niveau
+Battez le Boss Rush

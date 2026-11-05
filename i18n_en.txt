@@ -1,0 +1,148 @@
+tag|Blast the alien invaders and bring back the light of the stars!
+play|Play
+select|Stages
+hangar|Hangar
+ships|Ships
+upgrades|Upgrades
+settings|Settings
+sound|Sound
+music|Music
+vibration|Vibration
+quality|Graphics
+q_auto|Auto
+q_low|Low
+q_high|High
+language|Language
+auto|Auto
+difficulty|Difficulty
+easy|Easy
+normal|Normal
+hard|Hard
+paused|Paused
+resume|Resume
+restart|Restart
+quit|Quit
+gameover|Game Over
+clear|Stage Clear!
+score|Score
+best|Best
+credits|Credits
+next|Next
+retry|Retry
+map|Map
+revive|Continue (video)
+double|Double credits (video)
+warning|WARNING
+bossApproach|Giant mothership approaching!
+equip|Use
+equipped|In use
+max|MAX
+fireRate|Fire rate
+damage|Damage
+shield|Shield
+magnet|Magnet
+stage|Stage
+skip|Skip
+howto|Drag anywhere to fly · auto fire · B = bomb
+madeBy|Made by
+privacy|Privacy policy
+unlockAt|Clear stage {n}
+newBest|New best!
+bomb|Bomb
+noVideo|Video not available right now
+needCr|Not enough credits
+sh1|Twin blasters · balanced
+sh2|Wide spread · very fast
+sh3|Heavy piercing cannon · extra shield
+pSpread|Spread
+pLaser|Laser
+pHoming|Missiles
+pShield|Shield +1
+pBomb|Bomb +1
+pSpeed|Speed up
+pLife|1UP!
+n1|Violet Veil
+n2|Cinder Belt
+n3|Frostmoon Rime
+n4|Twin Suns Zone
+n5|Coral Drift
+n6|Storm Rift
+n7|Glass Comet Field
+n8|Ember Forge
+n9|Hive Hollow
+n10|Heart of the Swarm
+pMagnet|MAGNET!
+pScore2|SCORE x2!
+pPower|POWER UP!
+evolve|EVOLVE!
+tierDown|TIER DOWN
+shake|Screen shake
+killBonus|Kill bonus
+noDmg|No-damage bonus
+comboBonus|Combo bonus
+total|Total
+tapSkip|Tap to skip
+puTime|Power-up Time
+lives|Extra Life
+missions|Missions
+daily|Daily Reward
+day|Day {n}
+claim|Claim
+claimed|Claimed
+newTomorrow|New missions tomorrow
+m_kill|Defeat {n} aliens
+m_coin|Collect {n} coins
+m_pu|Collect {n} power-ups
+m_stage|Clear {n} stage(s)
+m_boss|Defeat a boss
+m_nodmg|Clear a stage without losing a life
+skins|Paint
+flames|Engine Flame
+sk1|Classic
+sk2|Ocean
+sk3|Candy
+sk4|Jungle
+sk5|Gold
+sk6|Hologram
+fl1|Fire
+fl2|Ice
+fl3|Galaxy
+fl4|Lime
+fl5|Rainbow
+needStars|{n} ★
+starBonus|New stars!
+evCoins|Coin shower!
+evGold|Golden alien! Shoot it!
+evSupply|Supply drop!
+pDrone|DRONES!
+helper|Helper
+helperD|+1 shield and slower enemy shots
+levelUp|LEVEL UP!
+spStage|Special Stage
+spName|Treasure Comet
+spBonus|Special Stage Bonus
+spMega|Mega Reward!
+allClear|Stages 1–10 cleared!
+victorySub|Next: the Special Stage Treasure Comet, then Stage 11 and beyond!
+toEndless|Continue
+toMenu|Main Menu
+rush|Boss Rush
+rushLock|Clear stage 10 to unlock Boss Rush
+rushDone|Bosses defeated: {n} / 10
+rushBest|Best
+freePU|Free power-up
+freePU2|Power-up + shield!
+tutT|How to fly
+tut1|Drag anywhere to move your ship
+tut2|It fires automatically. Grab power-ups!
+tutOk|Got it!
+m_ship|Clear {n} stage(s) with {s}
+sk7|Neon
+sk8|Crimson
+sk9|Void
+sk10|Stealth
+sk11|Arctic
+sk12|Solar
+ach_a5|Clear stage 5
+ach_a3s|Get 3 stars on any stage
+ach_arush|Beat Boss Rush

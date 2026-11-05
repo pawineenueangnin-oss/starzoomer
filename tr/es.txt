@@ -1,0 +1,148 @@
+¡Derriba a los invasores alienígenas y devuelve la luz a las estrellas!
+Jugar
+Niveles
+Hangar
+Naves
+Mejoras
+Ajustes
+Sonido
+Música
+Vibración
+Gráficos
+Auto
+Bajo
+Alto
+Idioma
+Auto
+Dificultad
+Fácil
+Normal
+Difícil
+En pausa
+Seguir
+Reiniciar
+Salir
+Fin del juego
+¡Nivel superado!
+Puntos
+Récord
+Créditos
+Siguiente
+Reintentar
+Mapa
+Continuar (vídeo)
+Créditos x2 (vídeo)
+ALERTA
+¡Se acerca una nave nodriza gigante!
+Usar
+En uso
+MÁX
+Cadencia
+Daño
+Escudo
+Imán
+Nivel
+Saltar
+Arrastra para volar · disparo automático · B = bomba
+Hecho por
+Política de privacidad
+Supera el nivel {n}
+¡Nuevo récord!
+Bomba
+Vídeo no disponible ahora
+Créditos insuficientes
+Cañones dobles · equilibrada
+Disparo amplio · muy rápida
+Cañón perforante · escudo extra
+Abanico
+Láser
+Misiles
+Escudo +1
+Bomba +1
+Más velocidad
+1UP!
+Velo Violeta
+Cinturón de Ceniza
+Luna Helada Rime
+Zona de los Soles Gemelos
+Deriva de Coral
+Grieta de Tormenta
+Campo de Cometas de Cristal
+Forja de Brasas
+Hueco de la Colmena
+Corazón del Enjambre
+¡IMÁN!
+¡PUNTOS x2!
+¡POTENCIA!
+¡EVOLUCIÓN!
+NIVEL BAJA
+Temblor de pantalla
+Bono por derribos
+Bono sin daño
+Bono de combo
+Total
+Toca para saltar
+Duración de poderes
+Vida extra
+Misiones
+Premio diario
+Día {n}
+Recoger
+Recogido
+Nuevas misiones mañana
+Derrota {n} alienígenas
+Junta {n} monedas
+Junta {n} poderes
+Supera {n} nivel(es)
+Derrota a un jefe
+Supera un nivel sin perder vidas
+Pintura
+Llama del motor
+Clásico
+Océano
+Caramelo
+Jungla
+Oro
+Holograma
+Fuego
+Hielo
+Galaxia
+Lima
+Arcoíris
+{n} ★
+¡Estrellas nuevas!
+¡Lluvia de monedas!
+¡Alien dorado! ¡Dispárale!
+¡Suministros!
+¡DRONES!
+Ayudante
++1 escudo y disparos enemigos más lentos
+¡SUBES DE NIVEL!
+Fase especial
+Cometa del tesoro
+Bonus de fase especial
+¡Megapremio!
+¡Niveles 1–10 superados!
+Siguiente: la Fase Especial Cometa del Tesoro, ¡y luego el nivel 11 y más!
+Continuar
+Menú principal
+Jefes en serie
+Supera la fase 10 para desbloquear Jefes en serie
+Jefes derrotados: {n} / 10
+Récord
+Mejora gratis
+¡Mejora + escudo!
+Cómo volar
+Arrastra en cualquier lugar para mover la nave
+Dispara sola. ¡Recoge mejoras!
+¡Entendido!
+Supera {n} fase(s) con {s}
+Neón
+Carmesí
+Vacío
+Sigilo
+Ártico
+Solar
+Supera la fase 5
+Consigue 3 estrellas en una fase
+Supera Jefes en serie

@@ -1,0 +1,148 @@
+Zestrzel kosmicznych najeźdźców i przywróć światło gwiazd!
+Graj
+Poziomy
+Hangar
+Statki
+Ulepszenia
+Ustawienia
+Dźwięk
+Muzyka
+Wibracje
+Grafika
+Auto
+Niska
+Wysoka
+Język
+Auto
+Trudność
+Łatwy
+Normalny
+Trudny
+Pauza
+Wznów
+Od nowa
+Wyjdź
+Koniec gry
+Poziom ukończony!
+Wynik
+Rekord
+Kredyty
+Dalej
+Jeszcze raz
+Mapa
+Kontynuuj (wideo)
+Kredyty x2 (wideo)
+UWAGA
+Nadlatuje olbrzymi statek-matka!
+Użyj
+W użyciu
+MAX
+Szybkostrzelność
+Obrażenia
+Tarcza
+Magnes
+Poziom
+Pomiń
+Przeciągnij, by latać · auto ogień · B = bomba
+Twórca
+Prywatność
+Ukończ poziom {n}
+Nowy rekord!
+Bomba
+Wideo teraz niedostępne
+Za mało kredytów
+Podwójne blastery · zbalansowany
+Szeroki rozrzut · bardzo szybki
+Ciężkie działo przebijające · dodatkowa tarcza
+Rozrzut
+Laser
+Rakiety
+Tarcza +1
+Bomba +1
+Szybciej
+1UP!
+Fioletowa Zasłona
+Pas Popiołu
+Lodowy Księżyc Rime
+Sektor Bliźniaczych Słońc
+Koralowy Dryf
+Szczelina Burzy
+Pole Szklanych Komet
+Kuźnia Żaru
+Dziupla Roju
+Serce Roju
+MAGNES!
+PUNKTY x2!
+WZMOCNIENIE!
+EWOLUCJA!
+POZIOM W DÓŁ
+Wstrząsy ekranu
+Premia za zestrzelenia
+Premia bez obrażeń
+Premia za combo
+Razem
+Dotknij, aby pominąć
+Czas wzmocnień
+Dodatkowe życie
+Misje
+Nagroda dnia
+Dzień {n}
+Odbierz
+Odebrano
+Nowe misje jutro
+Pokonaj kosmitów: {n}
+Zbierz monety: {n}
+Zbierz wzmocnienia: {n}
+Ukończ poziomy: {n}
+Pokonaj bossa
+Ukończ poziom bez utraty życia
+Malowanie
+Płomień silnika
+Klasyczny
+Ocean
+Cukierek
+Dżungla
+Złoty
+Hologram
+Ogień
+Lód
+Galaktyka
+Limonka
+Tęcza
+{n} ★
+Nowe gwiazdki!
+Deszcz monet!
+Złoty kosmita! Strzelaj!
+Zrzut zapasów!
+DRONY!
+Pomocnik
++1 tarcza i wolniejsze pociski wrogów
+NOWY POZIOM!
+Etap specjalny
+Kometa skarbów
+Bonus etapu specjalnego
+Mega nagroda!
+Etapy 1–10 ukończone!
+Dalej: Etap Specjalny Kometa Skarbów, potem etap 11 i kolejne!
+Dalej
+Menu główne
+Boss Rush
+Ukończ etap 10, aby odblokować Boss Rush
+Pokonani bossowie: {n} / 10
+Rekord
+Darmowe ulepszenie
+Ulepszenie + tarcza!
+Jak latać
+Przeciągnij w dowolnym miejscu, aby poruszać statkiem
+Strzela automatycznie. Zbieraj ulepszenia!
+Rozumiem!
+Ukończ {n} etap(y) statkiem {s}
+Neon
+Karmazyn
+Pustka
+Niewidzialny
+Arktyka
+Słońce
+Ukończ etap 5
+Zdobądź 3 gwiazdki w dowolnym etapie
+Pokonaj Boss Rush

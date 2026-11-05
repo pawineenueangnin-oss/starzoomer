@@ -1,0 +1,148 @@
+Schieß die Alien-Invasoren ab und bring das Licht der Sterne zurück!
+Spielen
+Level
+Hangar
+Schiffe
+Upgrades
+Einstellungen
+Sound
+Musik
+Vibration
+Grafik
+Auto
+Niedrig
+Hoch
+Sprache
+Auto
+Schwierigkeit
+Leicht
+Normal
+Schwer
+Pause
+Weiter
+Neu starten
+Beenden
+Spiel vorbei
+Level geschafft!
+Punkte
+Rekord
+Credits
+Weiter
+Nochmal
+Karte
+Weiterspielen (Video)
+Credits x2 (Video)
+WARNUNG
+Riesiges Mutterschiff im Anflug!
+Nutzen
+Aktiv
+MAX
+Feuerrate
+Schaden
+Schild
+Magnet
+Level
+Überspringen
+Ziehen zum Fliegen · Autofeuer · B = Bombe
+Erstellt von
+Datenschutz
+Schaffe Level {n}
+Neuer Rekord!
+Bombe
+Gerade kein Video verfügbar
+Nicht genug Credits
+Doppelblaster · ausgewogen
+Breitstreuung · sehr schnell
+Schwere Durchschlagskanone · Extraschild
+Streuung
+Laser
+Raketen
+Schild +1
+Bombe +1
+Tempo +
+1UP!
+Violetter Schleier
+Aschegürtel
+Frostmond Rime
+Doppelsonnen-Sektor
+Korallendrift
+Sturmspalt
+Glaskometenfeld
+Glutschmiede
+Stockhöhle
+Herz des Schwarms
+MAGNET!
+PUNKTE x2!
+POWER-UP!
+EVOLUTION!
+STUFE VERLOREN
+Bildschirmwackeln
+Abschussbonus
+Kein-Schaden-Bonus
+Combo-Bonus
+Gesamt
+Tippen zum Überspringen
+Power-up-Dauer
+Extraleben
+Missionen
+Tagesbonus
+Tag {n}
+Abholen
+Abgeholt
+Neue Missionen morgen
+Besiege {n} Aliens
+Sammle {n} Münzen
+Sammle {n} Power-ups
+Schaffe {n} Level
+Besiege einen Boss
+Schaffe ein Level ohne Lebensverlust
+Lackierung
+Triebwerksflamme
+Klassik
+Ozean
+Bonbon
+Dschungel
+Gold
+Hologramm
+Feuer
+Eis
+Galaxie
+Limette
+Regenbogen
+{n} ★
+Neue Sterne!
+Münzregen!
+Goldener Alien! Schieß!
+Nachschub!
+DROHNEN!
+Helfer
++1 Schild und langsamere Gegnerschüsse
+LEVEL UP!
+Spezialstufe
+Schatzkomet
+Spezialstufen-Bonus
+Mega-Belohnung!
+Level 1–10 geschafft!
+Als Nächstes: Spezial-Level Schatzkomet, dann Level 11 und weiter!
+Weiter
+Hauptmenü
+Boss-Ansturm
+Schließe Level 10 ab, um den Boss-Ansturm freizuschalten
+Besiegte Bosse: {n} / 10
+Rekord
+Gratis-Power-up
+Power-up + Schild!
+So fliegst du
+Ziehe irgendwo, um dein Schiff zu bewegen
+Es feuert automatisch. Sammle Power-ups!
+Verstanden!
+Schließe {n} Level mit {s} ab
+Neon
+Karmesin
+Leere
+Tarnung
+Arktis
+Solar
+Schließe Level 5 ab
+Hole 3 Sterne in einem Level
+Schaffe den Boss-Ansturm

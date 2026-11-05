@@ -1,0 +1,148 @@
+Schiet de buitenaardse indringers neer en breng het sterrenlicht terug!
+Spelen
+Levels
+Hangar
+Schepen
+Upgrades
+Instellingen
+Geluid
+Muziek
+Trillen
+Graphics
+Auto
+Laag
+Hoog
+Taal
+Auto
+Moeilijkheid
+Makkelijk
+Normaal
+Moeilijk
+Gepauzeerd
+Verder
+Opnieuw
+Stoppen
+Game over
+Level gehaald!
+Score
+Record
+Credits
+Volgende
+Opnieuw
+Kaart
+Doorgaan (video)
+Credits x2 (video)
+WAARSCHUWING
+Reusachtig moederschip nadert!
+Gebruik
+In gebruik
+MAX
+Vuursnelheid
+Schade
+Schild
+Magneet
+Level
+Overslaan
+Sleep om te vliegen · automatisch vuren · B = bom
+Gemaakt door
+Privacybeleid
+Haal level {n}
+Nieuw record!
+Bom
+Nu geen video beschikbaar
+Niet genoeg credits
+Dubbele blasters · gebalanceerd
+Brede spreiding · supersnel
+Zwaar doorborend kanon · extra schild
+Spreiding
+Laser
+Raketten
+Schild +1
+Bom +1
+Sneller
+1UP!
+Violette Sluier
+Sintelgordel
+IJsmaan Rime
+Tweelingzonnen-zone
+Koraaldrift
+Stormkloof
+Glazen Kometenveld
+Gloedsmidse
+Korfholte
+Hart van de Zwerm
+MAGNEET!
+SCORE x2!
+POWER-UP!
+EVOLUTIE!
+NIVEAU OMLAAG
+Schermschudden
+Vernietigingsbonus
+Geen-schade-bonus
+Combobonus
+Totaal
+Tik om over te slaan
+Power-up-duur
+Extra leven
+Missies
+Dagbeloning
+Dag {n}
+Ophalen
+Opgehaald
+Morgen nieuwe missies
+Versla {n} aliens
+Verzamel {n} munten
+Verzamel {n} power-ups
+Haal {n} level(s)
+Versla een baas
+Haal een level zonder een leven te verliezen
+Verf
+Motorvlam
+Klassiek
+Oceaan
+Snoep
+Jungle
+Goud
+Hologram
+Vuur
+IJs
+Melkweg
+Limoen
+Regenboog
+{n} ★
+Nieuwe sterren!
+Muntenregen!
+Gouden alien! Schiet hem!
+Voorraad valt!
+DRONES!
+Helper
++1 schild en tragere vijandelijke kogels
+LEVEL OMHOOG!
+Speciaal level
+Schatkomeet
+Bonus speciaal level
+Megabeloning!
+Levels 1–10 gehaald!
+Hierna: het Speciale Level Schatkomeet, dan level 11 en verder!
+Doorgaan
+Hoofdmenu
+Baasrace
+Voltooi level 10 om de Baasrace te ontgrendelen
+Bazen verslagen: {n} / 10
+Record
+Gratis power-up
+Power-up + schild!
+Zo vlieg je
+Sleep ergens om je schip te bewegen
+Hij schiet vanzelf. Pak power-ups!
+Begrepen!
+Voltooi {n} level(s) met {s}
+Neon
+Karmijn
+Leegte
+Stealth
+Arctisch
+Zon
+Voltooi level 5
+Haal 3 sterren in een level
+Versla de Baasrace

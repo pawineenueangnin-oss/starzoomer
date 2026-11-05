@@ -1,0 +1,148 @@
+Derrube os invasores alienígenas e traga de volta a luz das estrelas!
+Jogar
+Fases
+Hangar
+Naves
+Melhorias
+Configurações
+Som
+Música
+Vibração
+Gráficos
+Auto
+Baixo
+Alto
+Idioma
+Auto
+Dificuldade
+Fácil
+Normal
+Difícil
+Pausado
+Continuar
+Reiniciar
+Sair
+Fim de jogo
+Fase concluída!
+Pontos
+Recorde
+Créditos
+Próxima
+Tentar de novo
+Mapa
+Continuar (vídeo)
+Créditos x2 (vídeo)
+ALERTA
+Nave-mãe gigante se aproximando!
+Usar
+Em uso
+MÁX
+Cadência
+Dano
+Escudo
+Ímã
+Fase
+Pular
+Arraste para voar · tiro automático · B = bomba
+Feito por
+Política de privacidade
+Conclua a fase {n}
+Novo recorde!
+Bomba
+Vídeo indisponível agora
+Créditos insuficientes
+Canhões duplos · equilibrada
+Tiro espalhado · muito rápida
+Canhão perfurante · escudo extra
+Leque
+Laser
+Mísseis
+Escudo +1
+Bomba +1
+Mais velocidade
+1UP!
+Véu Violeta
+Cinturão de Cinzas
+Lua Gelada Rime
+Setor dos Sóis Gêmeos
+Deriva de Coral
+Fenda da Tempestade
+Campo de Cometas de Vidro
+Forja das Brasas
+Oco da Colmeia
+Coração do Enxame
+ÍMÃ!
+PONTOS x2!
+POTÊNCIA!
+EVOLUÇÃO!
+NÍVEL CAIU
+Tremor de tela
+Bônus de abates
+Bônus sem dano
+Bônus de combo
+Total
+Toque para pular
+Duração dos poderes
+Vida extra
+Missões
+Prêmio diário
+Dia {n}
+Pegar
+Pego
+Novas missões amanhã
+Derrote {n} alienígenas
+Junte {n} moedas
+Junte {n} poderes
+Passe {n} fase(s)
+Derrote um chefe
+Passe uma fase sem perder vida
+Pintura
+Chama do motor
+Clássico
+Oceano
+Doce
+Selva
+Ouro
+Holograma
+Fogo
+Gelo
+Galáxia
+Lima
+Arco-íris
+{n} ★
+Novas estrelas!
+Chuva de moedas!
+Alien dourado! Atire nele!
+Suprimentos!
+DRONES!
+Ajudante
++1 escudo e tiros inimigos mais lentos
+SUBIU DE NÍVEL!
+Fase especial
+Cometa do tesouro
+Bônus da fase especial
+Megaprêmio!
+Fases 1–10 concluídas!
+A seguir: a Fase Especial Cometa do Tesouro, depois a fase 11 e mais!
+Continuar
+Menu principal
+Maratona de Chefes
+Conclua a fase 10 para desbloquear a Maratona de Chefes
+Chefes derrotados: {n} / 10
+Recorde
+Power-up grátis
+Power-up + escudo!
+Como voar
+Arraste em qualquer lugar para mover a nave
+Ela atira sozinha. Pegue power-ups!
+Entendi!
+Conclua {n} fase(s) com {s}
+Neon
+Carmesim
+Vazio
+Furtivo
+Ártico
+Solar
+Conclua a fase 5
+Ganhe 3 estrelas em uma fase
+Vença a Maratona de Chefes
