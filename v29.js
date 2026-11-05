@@ -44,11 +44,15 @@ const _mis=UI.missions;UI.missions=function(){_mis.call(this);const D=SAVE.dly;t
 // ---------- Boss Rush ----------
 G.rushOn=false;
 const RB=3.2;// break between bosses (s)
-function rushBegin(){UI.hideAll&&UI.hideAll();G.fresh=true;G._rushInt=true;startStage(1,false);G._rushInt=false;G.rushOn=true;G.rushI=0;G.rushT0=performance.now();
+function rushBegin(){AU.init();UI.hideAll&&UI.hideAll();G.fresh=true;G._rushInt=true;startStage(1,false);G._rushInt=false;G.rushOn=true;G.rushI=0;G.rushT0=performance.now();
  G.ev=[];G.evI=0;G.mev=[];document.getElementById('freePU')?.remove();LATER.length=0;G.noIntro=true;P.lives=Math.max(P.lives,3+SHIPS[P.ship].hp+UPF.life());P.bombs=3;
+ // startStage already AU.play(1); re-kick so music begins with the rush banner even if AC just resumed
+ AU.songId=-2;AU.play(1);AU.sfx('power');
  rushNext(0);}
 function rushNext(i){G.rushI=i;G.stage=i+1;G.dm=mkDM();G.boss=null;G.warnT=0;G.t=G.dur+2.5-RB;G.bg=i;setBG(i,true);prewarm(-1,i);
- G.banner={s:T('rush')+' '+(i+1)+' / 10',t:2.6};}
+ G.banner={s:T('rush')+' '+(i+1)+' / 10',t:2.6};
+ // Music with the inter-boss banner (stageClear / damageBoss may have silenced it)
+ AU.play(i+1);}
 window.rushBegin=rushBegin;
 const _ss=startStage;startStage=function(n,e){if(G.rushOn&&!G._rushInt){G.rushOn=false;return rushBegin();}G.rushOn=false;_ss(n,e);G.freePU=0;freePU(n,e);};
 const _sc=stageClear;stageClear=function(){if(!G.rushOn)return _sc();
@@ -76,8 +80,8 @@ const _hud=UI.hud;UI.hud=function(on){_hud.call(this,on);if(!on){const b=documen
 const _menu=UI.menu;UI.menu=function(){G.rushOn=false;_menu.call(this);const s=this.el(),row=s.querySelector('[data-a="map"]');if(!row)return;
  const ok=!!SAVE.cleared,b=document.createElement('button');b.className='b pink';b.dataset.a='rush';b.disabled=!ok;
  b.innerHTML=(ok?'⚔ ':'🔒 ')+T('rush')+(ok&&SAVE.rushBest?` · ${SAVE.rushBest|0}`:'');if(!ok)b.title=T('rushLock');
- b.addEventListener('click',()=>UI.act('rush',b));row.parentNode.appendChild(b);};
-const _act=UI.act;UI.act=function(a,b){if(a==='rush'){if(!SAVE.cleared){toast(T('rushLock'));return;}this.hideAll();Ads.banner(false);rushBegin();return;}
+ b.addEventListener('click',()=>{AU.init();AU.sfx('ui');UI.act('rush',b);});row.parentNode.appendChild(b);};
+const _act=UI.act;UI.act=function(a,b){if(a==='rush'){if(!SAVE.cleared){toast(T('rushLock'));return;}AU.init();this.hideAll();Ads.banner(false);rushBegin();return;}
  if(a==='skin'){const it=SKINS.find(x=>x.id===b.dataset.k);if(it&&it.ach){if(ACH[it.ach]()||SAVE.skins.includes(it.id)){if(!SAVE.skins.includes(it.id))SAVE.skins.push(it.id);SAVE.skin=it.id;persist();warmSkin();const sc=this.el().scrollTop;this.hangar();this.el().scrollTop=sc;}else toast(T('ach_'+it.ach));return;}}
  if(a==='menu'||a==='map')G.rushOn=false;return _act.call(this,a,b);};
 // ---------- first-run drag tutorial (ghost finger) ----------

@@ -154,7 +154,7 @@ function bossUpd(B,dt){B.t+=dt;if(B.fl>0)B.fl-=dt;const hh=B.h/2;
  B.tur.forEach(t=>{if(!t.alive)return;if(t.fl>0)t.fl-=dt;const tx=B.x+t.ox,ty=B.y+t.oy;t.ang=Math.atan2(P.y-ty,P.x-tx);t.cd-=dt*spdM;
   if(t.cd<=0){t.cd=(B.cur&&B.cur.k==='turrets'?.62:2.3)/G.dm.fire;eShoot({x:tx,y:ty},t.ang,125,ART.spr.eb2);}});
  // beam
- if(B.beam){const bm=B.beam;bm.t+=dt;if(bm.t<1.15){bm.x+=(P.x-bm.x)*dt*1.5;}if(bm.t>2.9)B.beam=null;}}
+ if(B.beam){const bm=B.beam;bm.t+=dt;if(bm.sfx===0&&bm.t>=1.6){bm.sfx=1;AU.sfx('beam');}if(bm.t<1.15){bm.x+=(P.x-bm.x)*dt*1.5;}if(bm.t>2.9)B.beam=null;}}
 function runPat(B,c,dt,sec){c.t+=dt;const f=sf(),hh=B.h/2;const every=(iv)=>{if(c.t>=c.c*iv){c.c++;return true;}return false;};
  switch(c.k){
   case'aimFan':if(every(.95)){const n=3+B.phase,a=Math.atan2(P.y-B.y-B.coreOy,P.x-B.x);for(let i=0;i<n;i++)bossFireCore(B,a+(i-(n-1)/2)*.22,125+f*6);}break;
@@ -166,7 +166,7 @@ function runPat(B,c,dt,sec){c.t+=dt;const f=sf(),hh=B.h/2;const every=(iv)=>{if(
   case'rain':if(every(.17)){const b=take(EB);if(b){b.x=B.x+rnd(-B.w/2,B.w/2)*.9;b.y=B.y+hh*.4;b.vx=rnd(-20,20);b.vy=rnd(95,150)*G.dm.spd;b.ax=0;b.ay=0;b.r=3;b.s=ART.spr.eb2;b.t=0;}}break;
   case'minionsD':if(every(1.6)&&c.c<3){spawnE('diver',B.x+(c.c%2?-1:1)*B.w*.35,B.y,{ty:B.y+60});}break;
   case'minionsK':if(every(1.6)&&c.c<3){spawnE('kami',B.x+(c.c%2?-1:1)*B.w*.3,B.y+20);}break;
-  case'beam':if(c.c===0){c.c=1;B.beam={x:P.x,t:0};AU.sfx('charge');setTimeout(()=>{if(G.boss===B)AU.sfx('beam');},1600);}
+  case'beam':if(c.c===0){c.c=1;B.beam={x:P.x,t:0,sfx:0};AU.sfx('charge');}
    if(B.i>=6&&c.t>1.7&&c.t<2.8&&every(.5)){const a=Math.atan2(P.y-B.y,P.x-B.x);bossFireCore(B,a+.5,130);bossFireCore(B,a-.5,130);}break;}}
 function bossHit(B,x,y,dmg){if(B.t<3||B.dead)return false;const hh=B.h/2;
  for(const t of B.tur){if(!t.alive)continue;const dx=x-(B.x+t.ox),dy=y-(B.y+t.oy);if(dx*dx+dy*dy<13*13){t.hp-=dmg;t.fl=.06;if(t.hp<=0){t.alive=false;boom(B.x+t.ox,B.y+t.oy,22,['o','y','w']);AU.sfx('boom');G.shake=7;damageBoss(B,B.mhp*.06);G.score+=2000;}return true;}}
@@ -302,7 +302,7 @@ cv.addEventListener('pointermove',e=>{if(PTR.id!==e.pointerId||G.mode!=='play')r
 const KM={ArrowLeft:'l',KeyA:'l',ArrowRight:'r',KeyD:'r',ArrowUp:'u',KeyW:'u',ArrowDown:'d',KeyS:'d'};
 addEventListener('keydown',e=>{AU.init();const k=KM[e.code];if(k){KEY[k]=1;e.preventDefault();}if(e.code==='Space'||e.code==='KeyX'||e.code==='KeyB'){useBomb();e.preventDefault();}if(e.code==='KeyP')UI.pauseToggle();});
 addEventListener('keyup',e=>{const k=KM[e.code];if(k)KEY[k]=0;});
-document.addEventListener('visibilitychange',()=>{if(document.hidden){if(G.mode==='play')UI.pause();if(AU.ac)AU.ac.suspend();}else if(AU.ac&&G.mode!=='paused')AU.ac.resume();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){if(G.mode==='play')UI.pause();if(AU.ac)AU.ac.suspend();}else if(AU.ac){AU.ac.resume();}});
 // ---------- layout ----------
 function layout(){const vv=window.visualViewport;const vw=vv?vv.width:innerWidth,vh=vv?vv.height:innerHeight;
  const pr=$('probe');const cs=getComputedStyle(pr);const st=parseFloat(cs.paddingTop)||0,sb=parseFloat(cs.paddingBottom)||0;

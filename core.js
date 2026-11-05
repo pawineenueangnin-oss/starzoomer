@@ -118,7 +118,7 @@ const AU={ac:null,on:false,voices:0,maxVoices:40,next:0,step:0,song:null,songId:
   bus.connect(c);c.connect(l);l.connect(ws);ws.connect(ac.destination);this.bus=bus;
   this.mg=ac.createGain();this.mg.gain.value=SAVE.mus?.42:0;this.mg.connect(bus);this.sg=ac.createGain();this.sg.gain.value=SAVE.snd?.8:0;this.sg.connect(bus);
   const nb=ac.createBuffer(1,ac.sampleRate*1,ac.sampleRate),d=nb.getChannelData(0);let r=12345;for(let i=0;i<d.length;i++){r=(r*1103515245+12345)&0x7fffffff;d[i]=r/0x3fffffff-1;}this.nb=nb;},
- init(){if(this.ac){if(this.ac.state==='suspended')this.ac.resume();return;}try{const A=window.AudioContext||window.webkitAudioContext;if(!A)return;this.build(new A({latencyHint:'interactive'}));this.on=true;}catch(e){}},
+ init(){if(this.ac){if(this.ac.state==='suspended')this.ac.resume();return;}try{const A=window.AudioContext||window.webkitAudioContext;if(!A)return;this.build(new A({latencyHint:'interactive'}));this.on=true;if(this.ac.state==='suspended')this.ac.resume();if(this.songId>=0){const id=this.songId;this.songId=-2;this.play(id);}}catch(e){}},
  setVol(){if(!this.ac)return;const t=this.ac.currentTime;this.mg.gain.setTargetAtTime(SAVE.mus?.42:0,t,.05);this.sg.gain.setTargetAtTime(SAVE.snd?.8:0,t,.05);},
  env(g,t,a,h,r,v){a=Math.max(a,.006);r=Math.max(r,.025);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+a);g.gain.setValueAtTime(v,t+a+h);g.gain.linearRampToValueAtTime(0,t+a+h+r);return t+a+h+r;},
  tone(dest,type,f,t,a,h,r,v,f2,filt){const ac=this.ac;if(this.voices>=this.maxVoices)return;this.voices++;const o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.setValueAtTime(f,t);
@@ -170,10 +170,17 @@ const AU={ac:null,on:false,voices:0,maxVoices:40,next:0,step:0,song:null,songId:
   const progs=[[0,5,2,6],[0,6,5,4],[0,3,5,4],[0,5,3,4],[0,2,5,6]];const pr=boss?[0,1,0,6]:progs[Math.floor(R()*progs.length)];
   const bpm=menu?112:boss?168:136+((id*7)%5)*6;const lead=[];for(let b=0;b<4;b++){const bar=[];for(let s=0;s<16;s++){const on=s%4===0?R()<.85:s%2===0?R()<.55:R()<.25;bar.push(on?(pr[b]+[0,2,4,7][Math.floor(R()*4)]):null);}lead.push(bar);}
   return{root,sc,pr,bpm,lead,boss,menu,arp:R()<.5,dens:boss?1:menu?.4:.75};},
- play(id){if(this.songId===id)return;this.songId=id;this.song=id<0?null:this.makeSong(id);this.step=0;if(this.ac)this.next=this.ac.currentTime+.08;},
+ play(id){if(this.songId===id)return;
+  // Cut already-scheduled notes of the previous song (lookahead) so scene changes don't leave old music hanging.
+  if(this.ac&&this.cg){const t0=this.ac.currentTime;try{this.cg.gain.cancelScheduledValues(t0);this.cg.gain.setValueAtTime(Math.max(0,this.cg.gain.value),t0);this.cg.gain.linearRampToValueAtTime(0,t0+.05);}catch(e){}const dead=this.cg;setTimeout(()=>{try{dead.disconnect();}catch(e){}},120);}
+  this.songId=id;this.song=id<0?null:this.makeSong(id);this.step=0;
+  if(this.ac){this.cg=this.ac.createGain();this.cg.gain.value=id<0?0:1;this.cg.connect(this.mg);this.next=this.ac.currentTime+.05;}else this.cg=null;},
  // v29: single scheduler (only the worker timer calls tick); re-entrancy guarded; never schedules a step twice
- tick(){const ac=this.ac;if(this._busy||!ac||!this.song||ac.state!=='running'||!SAVE.mus)return;this._busy=true;try{const S=this.song,spb=60/S.bpm/4;if(this.next<ac.currentTime-.25)this.next=ac.currentTime+.05;
-  let n=0;while(this.next<ac.currentTime+.4&&n<32){this.note(S,this.step,this.next,spb,this.mg);this.next+=spb;this.step++;n++;}}finally{this._busy=false;}},
+ tick(){const ac=this.ac;if(this._busy||!ac||!this.song||!this.cg||ac.state!=='running'||!SAVE.mus)return;
+  // Don't schedule into pause/ad overlays (keeps music aligned with a frozen game).
+  if(typeof G!=='undefined'&&(G.mode==='paused'||G.mode==='adpause'))return;
+  this._busy=true;try{const S=this.song,spb=60/S.bpm/4,D=this.cg;if(this.next<ac.currentTime-.25)this.next=ac.currentTime+.05;
+  let n=0;while(this.next<ac.currentTime+.18&&n<16){this.note(S,this.step,this.next,spb,D);this.next+=spb;this.step++;n++;}}finally{this._busy=false;}},
  nf(S,deg,oct){const d=((deg%7)+7)%7,o=Math.floor(deg/7);return 440*Math.pow(2,(S.root+S.sc[d]+12*(o+oct)-69)/12);},
  note(S,st,t,spb,D){const s=st%16,bar=Math.floor(st/16)%4,sec=Math.floor(st/64)%4,ch=S.pr[bar];
   // drums

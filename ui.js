@@ -104,11 +104,11 @@ const UI={cur:null,
  endlessNext(){WARP.start(0,true,()=>startStage(0,true));},
  pause(){if(G.mode!=='play')return;G.mode='paused';$('pz').style.display='flex';$('pz').innerHTML=`<h2>${T('paused')}</h2><button class="b big" data-pa="resume"><span class="dirg">▶</span> ${T('resume')}</button><button class="b" data-pa="restart">${T('restart')}</button><button class="b" data-pa="quit">${T('quit')}</button>
   <div class="row"><button class="tg ${SAVE.snd?'on':''}" data-pa="snd">♪ ${T('sound')}</button><button class="tg ${SAVE.mus?'on':''}" data-pa="mus">♫ ${T('music')}</button></div>`;
-  $('pz').querySelectorAll('[data-pa]').forEach(b=>b.onclick=()=>{AU.sfx('ui');const k=b.dataset.pa;if(k==='resume'){$('pz').style.display='none';G.mode='play';last=performance.now();}
+  $('pz').querySelectorAll('[data-pa]').forEach(b=>b.onclick=()=>{AU.sfx('ui');const k=b.dataset.pa;if(k==='resume'){$('pz').style.display='none';G.mode='play';last=performance.now();AU.init();}
    else if(k==='restart'){$('pz').style.display='none';G.fresh=true;startStage(G.endless?0:G.stage,G.endless);}else if(k==='quit'){$('pz').style.display='none';this.map();}
    else{SAVE[k]=SAVE[k]?0:1;persist();AU.setVol();this.pause2();}});},
  pause2(){G.mode='play';this.pause();},
- pauseToggle(){if(G.mode==='play')this.pause();else if(G.mode==='paused'){$('pz').style.display='none';G.mode='play';}},
+ pauseToggle(){if(G.mode==='play')this.pause();else if(G.mode==='paused'){$('pz').style.display='none';G.mode='play';AU.init();}},
  begin(n){this.hideAll();G.fresh=true;startStage(n);},
  beginSec(s){this.hideAll();G.fresh=true;G.sector=Math.max(0,s);startStage(0,true);},
  act(a,b){const i=+b.dataset.i;
@@ -130,7 +130,7 @@ const UI={cur:null,
    case'cont':b.disabled=true;Ads.rewarded().then(ok=>{if(ok)revive();else{toast(T('noVideo'));b.disabled=false;}});break;}}};
 // Back button (Android bridge calls window.onAndroidBack(); browsers: history trap + Escape). Returns true when handled.
 UI.back=function(){const m=G.mode,c=this.cur;if(document.querySelector('.adMock.adI'))return true;
- if(m==='warp'){WARP.skip();return true;}if(m==='play'){this.pause();return true;}if(m==='paused'){$('pz').style.display='none';G.mode='play';last=performance.now();return true;}
+ if(m==='warp'){WARP.skip();return true;}if(m==='play'){this.pause();return true;}if(m==='paused'){$('pz').style.display='none';G.mode='play';last=performance.now();AU.init();return true;}
  if(c==='settings'){this.from==='map'?this.map():this.menu();return true;}if(c==='map'||c==='hangar'||c==='missions'||c==='victory'){this.menu();return true;}if(c==='result'){this.map();return true;}return false;};
 window.onAndroidBack=()=>UI.back();
 addEventListener('keydown',e=>{if(e.key==='Escape'||e.key==='GoBack'){UI.back();e.preventDefault();}});
