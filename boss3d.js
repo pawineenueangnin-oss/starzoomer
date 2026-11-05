@@ -20,7 +20,7 @@ const B3D={tried:false,ok:false,off:Q.get('b3d')==='0',r:null,cv:null,scene:null
    this.glowTex=new THREE.CanvasTexture(gc);this._q=new THREE.Quaternion();this._qi=new THREE.Quaternion();this._z=new THREE.Vector3(0,0,1);this.ok=true;LOG('boss3d: WebGL ready, three r'+THREE.REVISION);}
   catch(e){this.ok=false;this.why=String(e&&e.message||e);LOG('boss3d: fallback to 2D ('+this.why+')');}
   return this.ok;},
- fail(why){if(!this.ok&&this.tried)return;this.ok=false;this.tried=true;this.why=why;LOG('boss3d: disabled -> 2D art ('+why+')');ART.turSpr&&Object.keys(this.realTur).forEach(k=>ART.turSpr[k]=this.realTur[k]);},
+ fail(why){if(!this.ok&&this.tried)return;this.ok=false;this.tried=true;this.why=why;try{const d=document.createElement('div');d.textContent='3D->2D: '+why;d.style.cssText='position:fixed;left:0;right:0;bottom:60px;z-index:99999;background:#c00;color:#fff;font:12px monospace;padding:4px;text-align:center;pointer-events:none';document.body.appendChild(d);setTimeout(()=>d.remove(),10000);}catch(e){}LOG('boss3d: disabled -> 2D art ('+why+')');ART.turSpr&&Object.keys(this.realTur).forEach(k=>ART.turSpr[k]=this.realTur[k]);},
  realTur:{},
  // 3D is used when WebGL works and quality is not Low (auto quality drop to 0 => 2D art)
  active(){const keep=G.boss&&this.lastB===G.boss&&this.cur>=0;return !this.off&&(QUAL>0||keep)&&(this.tried?this.ok:this.init());},
