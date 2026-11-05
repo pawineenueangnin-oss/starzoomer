@@ -1,5 +1,5 @@
 // Starzoomer service worker. v29: one version constant; only the known asset list is cached; query strings ignored; old caches deleted.
-const GAME_VERSION='29';
+const GAME_VERSION='29b';
 const C='starzoomer-v'+GAME_VERSION;
 const F=['./','index.html','style.css','i18n.js','core.js','art.js','bossart.js','game.js','gfx.js','mapart.js','enemyart.js','ui.js','extras.js','weapons.js','warp.js','special.js','three.min.js','boss3d.js','v29.js','privacy.html','manifest.json','icon-192.png','icon-512.png','icon-maskable-192.png','icon-maskable-512.png','studio-logo.png','apple-touch-icon.png','favicon-32.png','favicon-48.png','fonts/ps2p.ttf'];
 const KNOWN=new Set(F.map(f=>new URL(f,self.registration.scope).href));

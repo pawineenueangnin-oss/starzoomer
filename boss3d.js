@@ -4,7 +4,7 @@
 // missing / lost, when quality is Low (incl. the automatic quality drop), when ?b3d=0, or when 3D rendering is too slow.
 'use strict';
 const B3D={tried:false,ok:false,off:Q.get('b3d')==='0',r:null,cv:null,scene:null,cam:null,cache:{},order:[],cur:-1,glowTex:null,
- stat:{n:0,acc:0,slow:0,ms:0,frames:0},why:'',
+ stat:{n:0,acc:0,slow:0,ms:0,frames:0},why:'',rs:1,offNext:'',lastB:null,
  init(){if(this.tried)return this.ok;this.tried=true;
   try{if(!window.THREE)throw new Error('three.js missing');const cv=document.createElement('canvas');cv.width=cv.height=8;
    const r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true,premultipliedAlpha:true,powerPreference:'default',preserveDrawingBuffer:false});
@@ -23,7 +23,7 @@ const B3D={tried:false,ok:false,off:Q.get('b3d')==='0',r:null,cv:null,scene:null
  fail(why){if(!this.ok&&this.tried)return;this.ok=false;this.tried=true;this.why=why;LOG('boss3d: disabled -> 2D art ('+why+')');ART.turSpr&&Object.keys(this.realTur).forEach(k=>ART.turSpr[k]=this.realTur[k]);},
  realTur:{},
  // 3D is used when WebGL works and quality is not Low (auto quality drop to 0 => 2D art)
- active(){return !this.off&&QUAL>0&&(this.tried?this.ok:this.init());},
+ active(){const keep=G.boss&&this.lastB===G.boss&&this.cur>=0;return !this.off&&(QUAL>0||keep)&&(this.tried?this.ok:this.init());},
  // ---------- material / mesh helpers ----------
  mat(c,o){return new THREE.MeshPhongMaterial(Object.assign({color:c,specular:0x555566,shininess:50,flatShading:true},o||{}));},
  emi(c,o){return new THREE.MeshBasicMaterial(Object.assign({color:c,toneMapped:false},o||{}));},
@@ -62,19 +62,19 @@ const B3D={tried:false,ok:false,off:Q.get('b3d')==='0',r:null,cv:null,scene:null
  disposeAll(){Object.keys(this.cache).forEach(k=>this.dispose(+k));},
  // ---------- per-frame render ----------
  // returns false when the caller should draw the 2D art instead
- draw(g,i,o){if(!this.active())return false;const B=G.boss;let M;try{M=this.build(i);}catch(e){this.fail('build '+e.message);return false;}if(!M)return false;
+ draw(g,i,o){if(!this.active())return false;const B=G.boss;if(B!==this.lastB){this.lastB=B;if(this.offNext){this.fail(this.offNext);return false;}}let M;try{M=this.build(i);}catch(e){this.fail('build '+e.message);return false;}if(!M)return false;
   const t0=performance.now();
   try{if(this.cur!==i){if(this.cur>=0&&this.cache[this.cur])this.scene.remove(this.cache[this.cur].g);this.scene.add(M.g);this.cur=i;
     if(!this.realTur[i]){this.realTur[i]=ART.turSpr[i]||(ART.turSpr[i]=turretSpr(BOSS_DEF[i][3]));}
     ART.turSpr[i]=this.blank||(this.blank=mk(2,2,()=>{},1));}
-   const pad=70,W=M.hw*2+pad*2,H=M.hh*2+pad*2,k=Math.min(DPR*SC,QUAL>=2?1.5:1.1,560/W),pw=Math.max(16,Math.round(W*k)),ph=Math.max(16,Math.round(H*k));
+   const pad=70,W=M.hw*2+pad*2,H=M.hh*2+pad*2,k=Math.min(DPR*SC,QUAL>=2?1.5:1.1,560/W)*this.rs,pw=Math.max(16,Math.round(W*k)),ph=Math.max(16,Math.round(H*k));
    if(this.cv.width!==pw||this.cv.height!==ph){this.r.setSize(pw,ph,false);}
    const c=this.cam;if(c.right!==W/2||c.top!==H/2){c.left=-W/2;c.right=W/2;c.top=H/2;c.bottom=-H/2;c.updateProjectionMatrix();}
    this.pose(M,B,o);this.r.render(this.scene,c);
    g.drawImage(this.cv,-W/2,-H/2,W,H);}
   catch(e){this.fail('render '+e.message);return false;}
   const ms=performance.now()-t0,S=this.stat;S.ms=S.ms*.95+ms*.05;S.frames++;S.acc+=ms;S.n++;
-  if(S.n>=90){const av=S.acc/S.n;S.acc=0;S.n=0;if(av>9){S.slow++;if(S.slow>=3)this.fail('too slow ('+av.toFixed(1)+' ms/frame)');}else S.slow=0;}
+  if(S.n>=90){const av=S.acc/S.n;S.acc=0;S.n=0;if(av>9){S.slow++;if(S.slow>=2){if(this.rs>.55){this.rs=Math.max(.5,this.rs*.8);S.slow=0;this.cv.width=this.cv.height=8;}else if(S.slow>=4)this.offNext='too slow ('+av.toFixed(1)+' ms/frame)';}}else S.slow=0;}
   return true;},
  pose(M,B,o){const t=o.t,ph=o.ph||0,fl=o.fl>0,dead=o.dead||0,cur=B&&B.cur,beam=B&&B.beam;
   // slow rotation / tilt + banking with horizontal motion
